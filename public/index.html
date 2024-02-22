@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Input</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1><img src="logo01-removebg-preview.png" alt="AGRI-AI Logo"></h1>
+        </div>
+        <nav class="navbar">
+            <a href="./gdsc.html">Home</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/resources">Resources</a>
+            <a href="https://chat.openai.com/">Contact</a>
+        </nav>
+    </header>
+   
+    <div class="container">
+        <div class="hero-section">
+            <h2>Enter Your Crop Data</h2>
+        </div>
+        <div class="body-section">
+            <form action="/crop-data" method="post" enctype="multipart/form-data">
+               
+                <label for="planting-date">Planting Date:</label>
+                <input type="date" id="planting-date" name="planting_date" required>
+                <br>
+               
+                <label for="time-of-year">Time of Year:</label>
+                <input type="text" id="time-of-year" name="time_of_year" required>
+                <br>
+               
+                <label for="diseased-crop-image">Upload Image of Diseased Crop:</label>
+                <input type="file" id="diseased-crop-image" name="diseased_crop_image" accept="image/*" required>
+                <br>
+                <div class="response-container">
+                    <button type="submit" class="response-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>Copyright © 2023 Farming Platform. All rights reserved.</p>
+        <p><a href="/privacy-policy">Privacy Policy</a>
+            | <a href="/terms-of-service">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
